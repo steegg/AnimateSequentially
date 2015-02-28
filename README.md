@@ -1,12 +1,12 @@
 # AnimateSequentially
 
-> `AnimateSequentially` is a very simple example that demonstrates how extends Sequential Animation of a UIView can successfully be achieved using the  UIView class method:
+> `AnimateSequentially` is a very simple example that demonstrates how Sequential Animation of a UIView can successfully be achieved using the  UIView class method:
 
 ``` objc
 + (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion
 ```
 
-However it does not work so well with UILabel a subclass of UIView. For example: UILabel's' alpha property and center position can be animated used this technique, but its backgroundColor and textColor can not.
+However, it does not work so well with UILabel, a subclass of UIView. For example: UILabel's alpha property and center position can be animated used this technique, but its backgroundColor and textColor cannot.
 
 ![demo](images/AnimateSequentiallyScreenshot.png)
 
@@ -18,7 +18,7 @@ However it does not work so well with UILabel a subclass of UIView. For example:
 
     The MIT License (MIT)
 
-    Copyright (c) 2014 Steve Greenwood
+    Copyright (c) 2015 Steve Greenwood
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
